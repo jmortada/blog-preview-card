@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@500;800&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .main *{
+      margin: 0;
+      width: 80%;
+    }
+    html{
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+    body{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #f5d04e;
+      font-family:'Figtree', sans-serif;
+    }
+    .main{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-content: space-around;
+      flex-wrap: wrap;
+      background-color: #ffffff;
+      width: 90%;
+      height: 70%;
+      overflow: hidden;
+      border-radius: 10px;
+      box-shadow: 10px 10px;
+    }
+    .learn{
+      display: flex;
+      align-items: center;
+      text-align: center;
+      height: 7%;
+      width: min-content;
+      background-color: #f3ce51;
+      border-radius: 5px;
+    }
+    .desc{
+      color: hsl(0, 0%, 50%);
+    }
+    h4{
+      margin: 0;
+    }
+    .main img{
+      border-radius: 10px;
+    }
+    .pfp{
+      width: 20%;
+    }
+    .profile{
+      display: flex;
+      align-items: center;
+    }
+    .profile h4{
+      width: max-content;
+      padding-left: 10%;
+    }
+    h3:hover{
+      color: hsl(47, 88%, 63%);
+    }
+    @media (min-width:600px){
+      .main{
+        width: 30%;
+        height: 60%;
+      }
+    }
+  </style>
+</head>
+<body>
+<div class="main">
+  <img src="assets/images/illustration-article.svg" alt="illustration-article">
+  <div class="learn">
+    <h4>Learning</h4>
+  </div>
+  <p>Published 21 Dec 2023</p>
+    
+  <h3>HTML & CSS foundations</h3>
+
+  <div class="desc">These languages are the backbone of every website, defining structure, content, and presentation.</div>
+  <div class="profile">
+  <img src="assets/images/image-avatar.webp" alt="pfp" class="pfp">
+  <h4>Greg Hooper</h4>
+  </div>
+</div>
+  <!--<div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>-->
+</body>
+</html>
